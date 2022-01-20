@@ -1,5 +1,6 @@
 package Main;
 
+import Entity.NPC_OldMan;
 import monster.Goblin;
 import object.OBJ_Boots;
 import object.OBJ_Chest;
@@ -70,5 +71,10 @@ public class AssetSetter {
         gp.monster[4] = new Goblin(gp);
         gp.monster[4].worldX = gp.tileSize*23;
         gp.monster[4].worldY = gp.tileSize*36;
+    }
+    public void setNPC() throws IOException {
+        gp.npc[0] = new NPC_OldMan(gp);
+        gp.npc[0].worldX = gp.tileSize*21;
+        gp.npc[0].worldY = gp.tileSize*21;
     }
 }

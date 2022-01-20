@@ -10,7 +10,8 @@ public class UI {
 
     GamePanel gp;
     Font tnr_40, tnr_80BOLD;
-    BufferedImage keyImage;
+    //BufferedImage keyImage;
+    Graphics2D g2;
     public boolean messageOn = false;
     public String message = "";
     int messageCounter;
@@ -22,11 +23,12 @@ public class UI {
     public UI(GamePanel gp) {
         this.gp = gp;
 
-        tnr_40 = new Font("Times New Roman",Font.PLAIN, 40);
+        tnr_40 = new Font("Times New Roman", Font.PLAIN, 40);
         tnr_80BOLD = new Font("Times New Roman", Font.BOLD, 80);
-        OBJ_Key key = new OBJ_Key(gp);
-        keyImage = key.image;
+        //OBJ_Key key = new OBJ_Key(gp);
+        //keyImage = key.image;
     }
+
     public void showMessage(String text) {
         message = text;
         messageOn = true;
@@ -34,7 +36,7 @@ public class UI {
 
     public void draw(Graphics2D g2) {
 
-        if (gameFinished == true) {
+        /*if (gameFinished == true) {
 
             g2.setFont(tnr_40);
             g2.setColor(Color.white);
@@ -67,7 +69,6 @@ public class UI {
 
             gp.gameThread = null;
 
-
         } else {
             g2.setFont(tnr_40);
             g2.setColor(Color.white);
@@ -82,12 +83,38 @@ public class UI {
             if (messageOn == true) {
                 g2.setFont(g2.getFont().deriveFont(30F));
                 g2.drawString(message, gp.tileSize / 2, gp.tileSize * 5);
-                messageCounter++;
+                messageCounter++; }
                 if (messageCounter > 120) {
                     messageCounter = 0;
-                    messageOn = false;
-                }
+                    messageOn = false;  }
             }
+        }*/
+        this.g2 = g2;
+        g2.setFont(tnr_80BOLD);
+        g2.setColor(Color.white);
+
+        if (gp.gameState == gp.playState) {
+            // Do playState
         }
+
+        if ( gp.gameState == gp.pauseState) {
+            drawPauseScreen();
+        }
+
     }
+    public void drawPauseScreen() {
+        String text = "GAME PAUSED";
+        int x = getXforCenteredText(text);
+
+        int y = gp.screenHeight/2;
+        g2.drawString(text, x, y);
+    }
+    public int getXforCenteredText(String text) {
+        int x;
+        int length = (int)g2.getFontMetrics().getStringBounds(text, g2).getWidth();
+        x = gp.screenWidth/2 - length/2;
+        return x;
+    }
+
 }
+

@@ -6,12 +6,10 @@ import Main.UtilityTool;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.IOException;
+import java.io.*;
+import java.net.URL;
 import java.util.Objects;
-import java.io.InputStreamReader;
-import java.io.InputStream;
 import java.awt.Graphics2D;
-import java.io.BufferedReader;
 import javax.imageio.ImageIO;
 //import static jdk.xml.internal.getResourceAsStream;
 
@@ -27,27 +25,28 @@ public class TileManager {
 
         tile = new Tile[11];
         mapTileNum = new int[gp.maxWorldCol][gp.maxWorldRow];
+        try {
+        getTileImage(); } catch (IOException e) { System.out.println("error");}
+        loadMap("C:\\GenSpark_repo\\2DJavaGame\\res\\maps\\world01.txt");
 
-        getTileImage();
-        loadMap("/maps/world01.txt");
+        System.getProperty("user.dir");
     }
 
-    public void getTileImage() {
+    public void getTileImage() throws IOException {
             //DEBUG :System.out.println("loading images started");
-            setup(0, "grass01", false);
-            setup(1, "wall-2", true);
-            setup(2, "water01", true);
-            setup(3, "sand", false);
-            setup(4, "tree", true);
-            //tile[8] = new Tile();
-            //tile[8].image = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/tiles/road-1.png")));
-            //DEBUG: System.out.println("loading images finished");
+            setup(0, "res/tiles/grass00.png", false);
+            setup(1, "res/tiles//thewall.png", true);
+            setup(2, "res/tiles/water01.png", true);
+            setup(3, "res/tiles/sand.png", false);
+            setup(4, "res/tiles/tree.png", true);
+            setup(5, "res/tiles/sand.png", false);
+
     }
     public void setup(int index, String imagePath, boolean collision) {
         UtilityTool uTool = new UtilityTool();
         try {
             tile[index] = new Tile();
-            tile[index].image = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/tiles/" + imagePath + ".png")));
+            tile[index].image = ImageIO.read(new File(imagePath));
             tile[index].image = uTool.scaleImage(tile[index].image, gp.tileSize, gp.tileSize);
             tile[index].collision = collision;
         } catch (IOException e) { e.printStackTrace(); }

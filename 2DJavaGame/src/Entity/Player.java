@@ -7,14 +7,15 @@ import Main.UtilityTool;
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.util.Objects;
 import java.awt.Dimension;
 import javax.swing.JPanel;
 
 public class Player extends Entity {
 
-    GamePanel gp;
     KeyHandler keyH;
 
     public final int screenX;
@@ -24,7 +25,6 @@ public class Player extends Entity {
     public Player(GamePanel gp, KeyHandler keyH) throws IOException {
         super(gp);
 
-        this.gp = gp;
         this.keyH = keyH;
 
         screenX = gp.screenWidth / 2 - (gp.tileSize - (gp.tileSize / 2));
@@ -48,25 +48,25 @@ public class Player extends Entity {
 
     public void getPlayerImage() throws IOException {
 
-        up1 = setup("boy_down_1");
-        up2 = setup("boy_up_2");
-        down1 = setup("boy_down_1");
-        down2 = setup("boy_down_2");
-        left1 = setup("boy_left_1");
-        left2 = setup("boy_left_2");
-        right1 = setup("boy_right_1");
-        right2 = setup("boy_right_2");
+        up1 = setup("C:\\GenSpark_repo\\2DJavaGame\\res\\Player\\boy_up_1.png");
+        up2 = setup("C:\\GenSpark_repo\\2DJavaGame\\res\\Player\\boy_up_2.png");
+        down1 = setup("C:\\GenSpark_repo\\2DJavaGame\\res\\Player\\boy_down_1.png");
+        down2 = setup("C:\\GenSpark_repo\\2DJavaGame\\res\\Player\\boy_down_2.png");
+        left1 = setup("C:\\GenSpark_repo\\2DJavaGame\\res\\Player\\boy_left_1.png");
+        left2 = setup("C:\\GenSpark_repo\\2DJavaGame\\res\\Player\\boy_left_2.png");
+        right1 = setup("C:\\GenSpark_repo\\2DJavaGame\\res\\Player\\boy_right_1.png");
+        right2 = setup("C:\\GenSpark_repo\\2DJavaGame\\res\\Player\\boy_right_2.png");
     }
 
-    public BufferedImage setup(String imageName) {
+    public BufferedImage setup(String filePath) {
         UtilityTool uTool = new UtilityTool();
         BufferedImage scaledImage = null;
         try {
-            scaledImage = ImageIO.read(getClass().getResourceAsStream("/Player/" + imageName + ".png"));
+            scaledImage = ImageIO.read(new File(filePath));
             scaledImage = uTool.scaleImage(scaledImage, gp.tileSize, gp.tileSize);
 
         } catch (IOException e) {
-            System.out.println("image not found");
+            System.out.println("image not found" );
         } return scaledImage;
     }
 
