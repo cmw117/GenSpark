@@ -1,22 +1,18 @@
 package object;
 
+import Entity.Entity;
 import Main.GamePanel;
 
 import javax.imageio.ImageIO;
 import java.io.IOException;
 import java.util.Objects;
 
-public class OBJ_Chest extends SuperObject{
-    GamePanel gp;
+public class OBJ_Chest extends Entity {
+
 
     public OBJ_Chest(GamePanel gp) {
-        this.gp = gp;
+        super(gp);
         name = "Chest";
-        try {
-            image = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/Objects/chest.png")));
-            uTool.scaleImage(image, gp.tileSize, gp.tileSize);
-        } catch (IOException e)
-        { e.printStackTrace();
-        }
+        down1 = setup("C:\\GenSpark_repo\\2DJavaGame\\res\\Objects\\chest.png", gp.tileSize, gp.tileSize);
     }
 }

@@ -9,10 +9,11 @@ import java.util.Objects;
 import java.util.Random;
 
 public class Goblin extends Entity {
-
+        GamePanel gp;
     public Goblin(GamePanel gp) throws IOException {
         super(gp);
-
+        this.gp = gp;
+        type = 2;
         name = "Goblin";
         speed = 3;
         maxLife = 6;
@@ -21,9 +22,9 @@ public class Goblin extends Entity {
         solidArea.x = 3;
         solidArea.y = 24;
         solidArea.width = 42;
-        solidArea.height =30;
-        //solidAreaDefaultX = solidArea.x;
-        //solidAreaDefaultY = solidArea.y;
+        solidArea.height = 30;
+        solidAreaDefaultX = solidArea.x;
+        solidAreaDefaultY = solidArea.y;
 
         getImage();
     }
@@ -39,21 +40,21 @@ public class Goblin extends Entity {
         right2 = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("/monster/goblin.png")));
     }
 
-  /*  public void setAction() {
+    public void setAction() {
 
         actionLockCounter++;
 
-        if(actionLockCounter == 120) {
+        if (actionLockCounter == 120) {
 
             Random random = new Random();
-            int i = random.nextInt(100)+1;
+            int i = random.nextInt(100) + 1;
 
             if (i < 25) {
 
             }
         }
-*/
 
 
     }
+}
 

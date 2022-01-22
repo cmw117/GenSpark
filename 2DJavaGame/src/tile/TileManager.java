@@ -8,9 +8,16 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.net.URL;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 import java.awt.Graphics2D;
+import java.util.Scanner;
 import javax.imageio.ImageIO;
+
+import static java.lang.Integer.parseInt;
 //import static jdk.xml.internal.getResourceAsStream;
 
 public class TileManager {
@@ -20,16 +27,16 @@ public class TileManager {
     public int[][] mapTileNum;
 
 
-    public TileManager(GamePanel gp) {
+    public TileManager(GamePanel gp) throws IOException {
         this.gp = gp;
 
-        tile = new Tile[11];
-        mapTileNum = new int[gp.maxWorldCol][gp.maxWorldRow];
+        tile = new Tile[6];
+        mapTileNum = new int[50][50];
         try {
         getTileImage(); } catch (IOException e) { System.out.println("error");}
         loadMap("C:\\GenSpark_repo\\2DJavaGame\\res\\maps\\world01.txt");
 
-        System.getProperty("user.dir");
+       // System.getProperty("user.dir");
     }
 
     public void getTileImage() throws IOException {
@@ -38,7 +45,7 @@ public class TileManager {
             setup(1, "res/tiles//thewall.png", true);
             setup(2, "res/tiles/water01.png", true);
             setup(3, "res/tiles/sand.png", false);
-            setup(4, "res/tiles/tree.png", true);
+            setup(4, "res/tiles/tree.png", false);
             setup(5, "res/tiles/sand.png", false);
 
     }
@@ -53,9 +60,21 @@ public class TileManager {
 
     }
 
-    public void loadMap(String filePath) {
-    	try {
-    		InputStream is = getClass().getResourceAsStream(filePath);
+    public void loadMap(String filePath) throws IOException {
+//    	try {
+//            Scanner scanner = new Scanner(new File(filePath));
+//            int [] is= new int [2500];
+//            int i = 0;
+//            while(scanner.hasNextInt())
+//            {
+//                is[i++] = scanner.nextInt();
+//            }
+
+            //List<String> is = Files.readAllLines(new File(filePath).toPath(), Charset.defaultCharset());
+
+
+    		//InputStream is = getClass().getResourceAsStream(filePath);
+            InputStream is = new FileInputStream(filePath);
     		BufferedReader br = new BufferedReader(new InputStreamReader(is));
     		int worldCol = 0;
     		int worldRow = 0;
@@ -63,25 +82,22 @@ public class TileManager {
     		while (worldCol < gp.maxWorldCol && worldRow < gp.maxWorldRow) {
     			
     			String line = br.readLine();
-    			
     			while (worldCol < gp.maxWorldCol) {
-    				String numbers[] = line.split("");
+    				String[] numbers = line.split(" ");
     				int num = Integer.parseInt(numbers[worldCol]);
-    				
+
     				mapTileNum[worldCol][worldRow] = num;
     				worldCol++;
     			}
     			if (worldCol == gp.maxWorldCol) {
     				worldCol = 0;
     				worldRow++;
-    			}
-    		} br.close();
-    	} catch (Exception e) {
-    		
-    	}
-    }
 
-    public void draw(Graphics2D g2) {
+    			}
+    		} //br.close();
+    	}
+
+        public void draw(Graphics2D g2) {
         int worldCol = 0;
         int worldRow = 0;
 
@@ -98,13 +114,14 @@ public class TileManager {
                     worldX - gp.tileSize < gp.player.worldX + gp.player.screenX &&
                     worldY + gp.tileSize > gp.player.worldY - gp.player.screenY &&
                     worldY - gp.tileSize < gp.player.worldY + gp.player.screenY) {
-                g2.drawImage(tile[tileNum].image, screenX, screenY, null);
+                g2.drawImage(tile[tileNum].image, screenX, screenY, gp.tileSize, gp.tileSize,null);
+                worldCol++;
+                //x += gp.tileSize;
+                if (worldCol == gp.maxWorldCol) {
+                    worldCol = 0;
+                    worldRow++;
             }
-            worldCol++;
-           //x += gp.tileSize;
-            if (worldCol == gp.maxWorldCol) {
-                worldCol = 0;
-                worldRow++;
+
 
             }
         }

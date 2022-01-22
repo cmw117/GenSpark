@@ -2,15 +2,15 @@ package Main;
 
 import Entity.Entity;
 import Entity.Player;
-import object.SuperObject;
-import tile.Tile;
 import tile.TileManager;
-import javax.imageio.ImageIO;
 import java.awt.*;
-import java.awt.image.BufferedImage;
 import javax.swing.*;
-import java.awt.*;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+
+import static java.awt.Color.white;
 
 public class GamePanel extends JPanel implements Runnable {
 
@@ -34,21 +34,29 @@ public class GamePanel extends JPanel implements Runnable {
     int FPS = 60;
 
     TileManager tileM = new TileManager(this);
-    KeyHandler keyH = new KeyHandler(this);
+    public KeyHandler keyH = new KeyHandler(this);
     public Sound music = new Sound();
     public Sound se = new Sound();
     Thread gameThread;
     public CollisionChecker cChecker = new CollisionChecker(this);
     public UI ui = new UI(this);
+    public EventHandler eHandler = new EventHandler(this);
     public AssetSetter aSetter = new AssetSetter(this);
+
+    //objects and entities
     public Player player = new Player(this, keyH);
     public Entity monster[] = new Entity[20];
 
-    public SuperObject obj[] = new SuperObject[10];
+    public Entity obj[] = new Entity [10];
     public Entity npc[] = new Entity[10];
+    ArrayList<Entity> entityList = new ArrayList<>();
+
+    //GAME STATE
     public int gameState;
+    public final int titleState = 0;
     public final int playState = 1;
     public final int pauseState = 2;
+    public final int dialogueState = 3;
 
 
     public GamePanel() throws IOException {
@@ -63,9 +71,8 @@ public class GamePanel extends JPanel implements Runnable {
     public void setupGame() throws IOException {
         aSetter.setObject();
         aSetter.setNPC();
-        playMusic(0);
         aSetter.setMonster();
-        gameState = playState;
+        gameState = titleState;
     }
 
     public void startGameThread() {
@@ -110,43 +117,77 @@ public class GamePanel extends JPanel implements Runnable {
                     npc[i].update();
                 }
             }
+            for (int i = 0; i < monster.length; i++) {
+                if(monster[i] != null) {
+                    monster[i].update();
+                }
+            }
         }
         if( gameState == pauseState) {
             //
         }
-
-       /* for( int i = 0; i < monster.length; i++) {
-            if(monster[i] != null) {
-                monster[i].update();
-            }
-        }*/
-
     }
     public void paintComponent(Graphics g) {
 
         super.paintComponent(g);
 
         Graphics2D g2 = (Graphics2D) g;
-        //TILES
-        tileM.draw(g2);
-        //DRAW OBJECTS ON MAP
-        for (int i = 0; i < obj.length; i ++) {
-            if(obj[i] != null) {
-                obj[i].draw(g2, this);
-            }
-        }//DRAW NPCS
-        for (int i =0; i < npc.length; i++) {
-            if(npc[i] != null) {
-                npc[i].draw(g2);
-            }
-        }
-        //PLAYER
-        player.draw(g2);
-        ui.draw(g2);
-        
-        g2.dispose();
 
-    } public void playMusic(int i) {
+        //TITLE SCREEN
+       if(gameState == titleState) {
+           try { ui.draw(g2); }
+           catch (IOException e) {e.printStackTrace();   }
+       }
+        //OTHERS
+        else {
+            //TILES
+            tileM.draw(g2);
+
+            // add player to entity list
+            entityList.add(player);
+            //add npcs to entity list
+            for ( int i = 0; i < npc.length; i++) {
+                if(npc[i] != null) {
+                    entityList.add(npc[i]);
+                }
+            }
+            //add object to entity list
+            for (int i = 0; i < obj.length; i++) {
+                if(obj[i] != null) {
+                    entityList.add(obj[i]);
+                }
+            }
+            // sort list
+           Collections.sort(entityList, new Comparator<Entity>() {
+               @Override
+               public int compare(Entity e1, Entity e2) {
+                   int result = Integer.compare(e1.worldY, e2.worldY);
+                   return result;
+               }
+           });
+            //DRAW ENTITIES
+           for(int i = 0; i < entityList.size(); i++) {
+               entityList.get(i).draw(g2);
+           }
+           entityList.clear();
+           try { ui.draw(g2); } catch (IOException e) {   e.printStackTrace();  }
+        }
+//        if(keyH.checkDrawTime == true) {
+//            long drawEnd = System.nanoTime();
+//            long passed = drawEnd - drawStart;
+//            g2.setColor(white);
+//            g2.setFont(new Font("Impact", Font.PLAIN, 10));
+//            g2.drawString("Draw Time:" + passed, 10, 400);
+//            int x = 10;
+//            int y = 400;
+//            g2.drawString("WorldX" + player.worldX, x, y); y += tileSize/2;
+//            g2.drawString("WorldY: "+ player.worldY, x, y); y += tileSize/2;
+//            g2.drawString("Col" + (player.worldX + player.solidArea.x)/tileSize, x, y); y += tileSize/2;
+//            g2.drawString("Row: "+ (player.worldY + player.solidArea.y)/tileSize, x, y);
+//        }
+        g2.dispose();
+    }
+    public void playMusic(int i) {
         music.setFile(i);
         music.play();
         music.loop();
