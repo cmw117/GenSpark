@@ -31,12 +31,11 @@ public class TileManager {
         this.gp = gp;
 
         tile = new Tile[6];
-        mapTileNum = new int[50][50];
+        mapTileNum = new int[gp.maxWorldCol][gp.maxWorldCol];
         try {
         getTileImage(); } catch (IOException e) { System.out.println("error");}
         loadMap("C:\\GenSpark_repo\\2DJavaGame\\res\\maps\\world01.txt");
 
-       // System.getProperty("user.dir");
     }
 
     public void getTileImage() throws IOException {
@@ -62,14 +61,7 @@ public class TileManager {
 
     public void loadMap(String filePath) throws IOException {
 //    	try {
-//            Scanner scanner = new Scanner(new File(filePath));
-//            int [] is= new int [2500];
-//            int i = 0;
-//            while(scanner.hasNextInt())
-//            {
-//                is[i++] = scanner.nextInt();
-//            }
-
+//
             //List<String> is = Files.readAllLines(new File(filePath).toPath(), Charset.defaultCharset());
 
 
@@ -87,6 +79,7 @@ public class TileManager {
     				int num = Integer.parseInt(numbers[worldCol]);
 
     				mapTileNum[worldCol][worldRow] = num;
+                    System.out.println(num);
     				worldCol++;
     			}
     			if (worldCol == gp.maxWorldCol) {
@@ -94,14 +87,16 @@ public class TileManager {
     				worldRow++;
 
     			}
-    		} //br.close();
+
+    		}
+        br.close();
     	}
 
         public void draw(Graphics2D g2) {
         int worldCol = 0;
         int worldRow = 0;
 
-        while (worldCol < gp.maxWorldCol && worldRow <gp.maxWorldRow) {
+        while (worldCol < gp.maxWorldCol && worldRow < gp.maxWorldRow) {
         	
         	int tileNum = mapTileNum[worldCol][worldRow];
 
@@ -117,12 +112,10 @@ public class TileManager {
                 g2.drawImage(tile[tileNum].image, screenX, screenY, gp.tileSize, gp.tileSize,null);
                 worldCol++;
                 //x += gp.tileSize;
-                if (worldCol == gp.maxWorldCol) {
-                    worldCol = 0;
-                    worldRow++;
             }
-
-
+            if (worldCol == gp.maxWorldCol) {
+                worldCol = 0;
+                worldRow++;
             }
         }
     }

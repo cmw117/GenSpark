@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f378eb0e-6d7c-4332-89e0-3e42757275f3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../2DJavaGame/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FlyJava/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FlyJava/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FlyJava/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FlyJava/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FlyJava/FlyJava.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FlyJava/src/Main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FlyJava/src/Main/Traveler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GoblinSlaughterer/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GoblinSlaughterer/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MovieTicketBooking/src/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MovieTicketBooking/src/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PotatoThief.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/artwork/boy_down_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/artwork/boy_down_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/artwork/boy_left_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/artwork/boy_left_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/artwork/boy_right_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/artwork/boy_right_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/artwork/boy_up_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/artwork/boy_up_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/artwork/potato.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/artwork/tiles/earth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/artwork/tiles/grass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/artwork/tiles/sand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/artwork/tiles/thewall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/artwork/tiles/tree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/artwork/tiles/wall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/artwork/tiles/water.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/maps/maps.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/sound/BlueBoyAdventure.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/sound/coin.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/sound/fanfare.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/sound/hitmonster.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/sound/powerup.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/sound/receivedamage.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/sound/unlock.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Goblin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Sound.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Boots.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Chest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Door.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Heart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Key.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Potato.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tile/Tile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tile/TileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestGame/TestGame.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestGame/src/Main/TestGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestGame/src/Main/TestGame2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2DJavaGame/out/production/2DJavaGame/Main/CollisionChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../2DJavaGame/out/production/2DJavaGame/Main/CollisionChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2DJavaGame/out/production/2DJavaGame/maps/maps.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2DJavaGame/out/production/2DJavaGame/tile/TileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../2DJavaGame/out/production/2DJavaGame/tile/TileManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2DJavaGame/res/maps/maps.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2DJavaGame/src/Main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../2DJavaGame/src/Main/AssetSetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2DJavaGame/src/tile/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../2DJavaGame/src/tile/TileManager.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="247XhXquh3FoF9y6FmZMdjpbGft" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images/sound" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GenSpark_repo\PotatoThief\images\sound" />
+      <recent name="C:\GenSpark_repo\PotatoThief\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GenSpark_repo\PotatoThief\images\maps" />
+      <recent name="C:\GenSpark_repo\PotatoThief\images\artwork\tiles" />
+      <recent name="C:\GenSpark_repo\PotatoThief\images\artwork" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="PotatoThief" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f378eb0e-6d7c-4332-89e0-3e42757275f3" name="Changes" comment="" />
+      <created>1642982727947</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642982727947</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
