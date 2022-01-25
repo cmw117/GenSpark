@@ -5,74 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f378eb0e-6d7c-4332-89e0-3e42757275f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../2DJavaGame/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FlyJava/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FlyJava/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FlyJava/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FlyJava/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FlyJava/FlyJava.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FlyJava/src/Main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FlyJava/src/Main/Traveler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GoblinSlaughterer/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../GoblinSlaughterer/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MovieTicketBooking/src/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MovieTicketBooking/src/main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PotatoThief.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/artwork/boy_down_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/artwork/boy_down_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/artwork/boy_left_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/artwork/boy_left_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/artwork/boy_right_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/artwork/boy_right_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/artwork/boy_up_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/artwork/boy_up_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/artwork/potato.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/artwork/tiles/earth.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/artwork/tiles/grass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/artwork/tiles/sand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/artwork/tiles/thewall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/artwork/tiles/tree.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/artwork/tiles/wall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/artwork/tiles/water.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/maps/maps.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/sound/BlueBoyAdventure.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/sound/coin.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/sound/fanfare.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/sound/hitmonster.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/sound/powerup.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/sound/receivedamage.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/sound/unlock.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Goblin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/AssetSetter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Sound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/UI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Boots.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Chest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Door.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Heart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Key.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/object/OBJ_Potato.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tile/Tile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tile/TileManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestGame/TestGame.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestGame/src/Main/TestGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TestGame/src/Main/TestGame2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2DJavaGame/out/production/2DJavaGame/Main/CollisionChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/../2DJavaGame/out/production/2DJavaGame/Main/CollisionChecker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2DJavaGame/out/production/2DJavaGame/maps/maps.txt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../BoardingTicketGeneratorJavaAirlines/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MovieTicketBooking/MovieTicketBooking.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TicketOrdering/AirlineTicketOrdering.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TicketOrdering/src/main/Booking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TicketOrdering/src/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TicketOrdering/src/main/Passenger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TicketOrdering/src/main/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2DJavaGame/out/production/2DJavaGame/Main/AssetSetter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../2DJavaGame/out/production/2DJavaGame/Main/AssetSetter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../2DJavaGame/out/production/2DJavaGame/tile/TileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../2DJavaGame/out/production/2DJavaGame/tile/TileManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2DJavaGame/res/maps/maps.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2DJavaGame/src/Main/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../2DJavaGame/src/Main/AssetSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2DJavaGame/src/tile/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../2DJavaGame/src/tile/TileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2DJavaGame/res/Player/boy_attack_down_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2DJavaGame/res/Player/boy_attack_down_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2DJavaGame/res/Player/boy_attack_left_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2DJavaGame/res/Player/boy_attack_left_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2DJavaGame/res/Player/boy_attack_right_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2DJavaGame/res/Player/boy_attack_right_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2DJavaGame/res/Player/boy_attack_up_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2DJavaGame/res/Player/boy_attack_up_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlyJava/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlyJava/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlyJava/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlyJava/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlyJava/FlyJava.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlyJava/src/Main/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FlyJava/src/Main/Traveler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/artwork/boy_down_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/artwork/boy_down_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/artwork/boy_left_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/artwork/boy_left_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/artwork/boy_right_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/artwork/boy_right_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/artwork/boy_up_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/artwork/boy_up_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/artwork/tiles/earth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/artwork/tiles/grass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/artwork/tiles/sand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/artwork/tiles/thewall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/artwork/tiles/tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/artwork/tiles/wall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/artwork/tiles/water.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/maps/maps.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
