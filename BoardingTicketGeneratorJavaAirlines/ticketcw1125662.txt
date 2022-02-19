@@ -1,0 +1,24 @@
+Boarding Pass : cw1125662
+-----------------------------------
+-----------------------------------
+PASSENGER DETAILS: 
+Name          : cassie west
+Age           : 30
+Email         : cjwest0727@gmail.com
+Phone #       : 
+Gender        : f
+----------------------------------- 
+-----------------------------------
+
+FLIGHT INFORMATION: 
+Date          : 3/12/2022
+Destination  : 15757408804
+Departure Time : 12:20
+ETA           : 14:3
+Ticket Price  : 3953
+Trip Booked: 2022-01-25 09:57:53.980-----------------------------------
+-----------------------------------
+
+ 
+Thank you for choosing Java Airlines! 
+Enjoy your trip.

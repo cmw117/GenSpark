@@ -1,0 +1,11 @@
+Boarding Pass : cw173379
+Name          : cassie west
+Age           : 30
+Email         : cjwest0727@gmail.com
+Phone #       : 5757408804
+Gender        : f
+Date          : 20/4/1706
+Destination  : dallas
+Departure Time : 13:30
+ETA           : 17:27
+Ticket Price  : 6162

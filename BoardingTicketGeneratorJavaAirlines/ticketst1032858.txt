@@ -1,0 +1,23 @@
+Boarding Pass : st1032858
+-----------------------------------
+-----------------------------------
+PASSENGER DETAILS: 
+Name          : second test
+Age           : 67
+Email         : cjwest0727@gmail.com
+Phone #       : 123456789`
+Gender        : f
+----------------------------------- 
+-----------------------------------
+
+FLIGHT INFORMATION: 
+Date          : 24/2/1928
+Destination  : dallas
+Departure Time : 4:50
+ETA           : 18:23
+Ticket Price  : 1870
+-----------------------------------
+-----------------------------------
+
+ 
+Thank you for choosing Java Airlines! Enjoy your trip.

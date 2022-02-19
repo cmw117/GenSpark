@@ -1,0 +1,11 @@
+Boarding Pass : kb1312676
+Name          : kalee b
+Age           : 32
+Email         : testtest@gmail.com
+Phone #       : 1327658761
+Gender        : f
+Date          : 30/12/1867
+Destination  : dallas
+Departure Time : 12:30
+ETA           : 16:49
+Ticket Price  : 4708

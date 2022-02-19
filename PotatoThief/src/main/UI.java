@@ -232,7 +232,7 @@ public class UI {
         g2.drawRoundRect(x+5, y+5, width-10, height-10, 25, 25);
     }
     public void drawPauseScreen() {
-        String text = "GAME PAUSED";
+        String text = "--GAME PAUSED--";
         int x = getXforCenteredText(text);
 
         int y = gp.screenHeight/2;

@@ -1,0 +1,24 @@
+Boarding Pass : cw1281832
+-----------------------------------
+-----------------------------------
+PASSENGER DETAILS: 
+Name          : cassie west
+Age           : 40
+Email         : cjwest0727@gmail.com
+Phone #       : 314321
+Gender        : f
+----------------------------------- 
+-----------------------------------
+
+FLIGHT INFORMATION: 
+Date          : 15/2/1997
+Destination  : dallas
+Departure Time : 12:20
+ETA           : 24:51
+Ticket Price  : 4365
+-----------------------------------
+-----------------------------------
+
+ 
+Thank you for choosing Java Airlines! 
+Enjoy your trip.

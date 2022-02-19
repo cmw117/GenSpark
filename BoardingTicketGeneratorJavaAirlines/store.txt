@@ -1,0 +1,10 @@
+Name          : cassie west
+Age           : 30
+Email         : cjwest0727@gmail.com
+Phone #       : 
+Gender        : f
+Date          : 3/23/2022
+Destination  : 15757408804
+Departure Time : 12:20
+ETA           : 8:28
+Ticket Price  : 4422

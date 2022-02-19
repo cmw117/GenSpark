@@ -1,0 +1,24 @@
+Boarding Pass : cw897646
+-----------------------------------
+-----------------------------------
+PASSENGER DETAILS: 
+Name          : cassie west
+Age           : 33
+Email         : cjwest0727@gmail.com
+Phone #       : 15757408804
+Gender        : f
+----------------------------------- 
+-----------------------------------
+
+FLIGHT INFORMATION: 
+Date          : 2/31/2023
+Destination  : dallas
+Departure Time : 12:20
+ETA           : 5:48
+Ticket Price  : 2858
+Trip Booked: 2022-01-25 08:45:16.403-----------------------------------
+-----------------------------------
+
+ 
+Thank you for choosing Java Airlines! 
+Enjoy your trip.

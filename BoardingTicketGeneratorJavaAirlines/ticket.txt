@@ -1,0 +1,11 @@
+Boarding Pass : 634121
+Name          : vishal
+Age           : 23
+Email         : abc@gmail.com
+Phone #       : 12334432
+Gender        : F
+Date          : 14/6/1965
+Destinantion  : New York
+Depature Time : 16:20
+ETA           : 13:21
+Ticket Price  : 2492

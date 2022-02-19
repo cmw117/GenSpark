@@ -18,11 +18,22 @@ public class Player extends Entity{
     KeyHandler keyH;
     String direction;
 
+    public final int screenX;
+    public final int screenY;
+
+    int counter2 = 2;
+
 
 
     public Player(GamePanel gp, KeyHandler keyH) {
         this.gp = gp;
         this.keyH = keyH;
+
+        screenX = gp.screenWidth/2 - (gp.tileSize/2);
+        screenY = gp.screenHeight/2 - (gp.tileSize/2);
+
+        solidArea = new Rectangle(0,0,48,48);
+
         setDefaultValues();
         getPlayerImage();
         direction = "down";
@@ -58,16 +69,29 @@ public class Player extends Entity{
 
             if (keyH.upPressed == true) {
                 direction = "up";
-                y -= speed;
             } else if (keyH.downPressed == true) {
                 direction = "down";
-                y += speed;
             } else if (keyH.leftPressed == true) {
-                x -= speed;
                 direction = "left";
             } else if (keyH.rightPressed == true) {
-                x += speed;
                 direction = "right";
+            }
+            //CHECK TILE COLLISION
+            collisionOn = false;
+            gp.cChecker.checkTile(this);
+            // IF COLLISION IS FALSE - PLAYER CAN MOVE
+            if(collisionOn == false) {
+
+                switch(direction) {
+                    case "up": y -= speed;
+                        break;
+                    case "down": y += speed;
+                        break;
+                    case "left": x -= speed;
+                        break;
+                    case "right": x += speed;
+                        break;
+                }
             }
             spriteCounter++;
             if (spriteCounter > 10) {

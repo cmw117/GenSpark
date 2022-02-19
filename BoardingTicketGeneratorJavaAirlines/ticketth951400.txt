@@ -1,0 +1,12 @@
+Boarding Pass : th951400
+-----------------------------------PASSENGER DETAILS: Name          : test human
+Age           : 45
+Email         : cjwest0727@gmail.com
+Phone #       : 373737373
+Gender        : f
+----------------------------------------------------------------------FLIGHT INFORMATION: Date          : 2/7/1949
+Destination  : dallas
+Departure Time : 13:40
+ETA           : 8:27
+Ticket Price  : 4386
+----------------------------------------------------------------------Thank you for choosing Java Airlines! Enjoy your trip.

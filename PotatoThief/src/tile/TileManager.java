@@ -14,9 +14,9 @@ import java.awt.image.BufferedImage;
 public class TileManager {
 
     GamePanel gp;
-    Tile[] tile;
+    public Tile[] tile;
 
-    int mapTileNum[][];
+    public int[][] mapTileNum;
 
     public TileManager(GamePanel gp) throws IOException {
 
@@ -62,19 +62,22 @@ public class TileManager {
             // 4 is water
 
             tile[0] = new Tile();
-            tile[0].image = ImageIO.read(new File("C:\\GenSpark_repo\\PotatoThief\\images\\artwork\\tiles\\earth.png"));
+            tile[0].image = ImageIO.read(new File("\\PotatoThief\\images\\artwork\\tiles\\earth.png"));
 
             tile[1] = new Tile();
-            tile[1].image = ImageIO.read(new File("C:\\GenSpark_repo\\PotatoThief\\images\\artwork\\tiles\\grass.png"));
+            tile[1].image = ImageIO.read(new File("\\PotatoThief\\images\\artwork\\tiles\\grass.png"));
 
             tile[2] = new Tile();
-            tile[2].image = ImageIO.read(new File("C:\\GenSpark_repo\\PotatoThief\\images\\artwork\\tiles\\thewall.png"));
+            tile[2].image = ImageIO.read(new File("\\PotatoThief\\images\\artwork\\tiles\\thewall.png"));
+            tile[2].collision = true;
 
             tile[3] = new Tile();
-            tile[3].image = ImageIO.read(new File("C:\\GenSpark_repo\\PotatoThief\\images\\artwork\\tiles\\tree.png"));
+            tile[3].image = ImageIO.read(new File("\\PotatoThief\\images\\artwork\\tiles\\tree.png"));
+            tile[3].collision = true;
 
             tile[4] = new Tile();
-            tile[4].image = ImageIO.read(new File("C:\\GenSpark_repo\\PotatoThief\\images\\artwork\\tiles\\water.png"));
+            tile[4].image = ImageIO.read(new File("\\PotatoThief\\images\\artwork\\tiles\\water.png"));
+            tile[4].collision = true;
 
         } catch (IOException e) {   e.printStackTrace(); }
     }
